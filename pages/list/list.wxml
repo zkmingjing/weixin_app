@@ -1,0 +1,24 @@
+<!--pages/list/list.wxml-->
+<view class='container'>
+ <view class='widget'>
+ <text class='column hide'>卡号</text>
+  <text class='column'>券名称</text>
+  <text class='column'>可用数量</text>
+  <text class='link-column'>操作</text>
+ </view>
+ <scroll-view scroll-y='true'>
+  <view>
+   <block wx:for="{{list}}">
+    <view class='widget'>
+    <text class='column hide'>{{item.cardNo}}</text>
+    <text class='column'>{{item.couponName}}</text>
+    <text class='column'>{{item.availableQuantity}}</text>
+    <view class='link-column'>
+      <navigator class='link' url='../operation/detail'>详情</navigator>
+    </view>
+    </view>
+   </block> 
+  </view>
+ </scroll-view>
+ <button type='primary' bindtap='add'>添加</button>
+</view>

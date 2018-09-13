@@ -1,0 +1,15 @@
+<!--pages/operation/detail.wxml-->
+<view class='row'>
+<view class='info'>
+  <input class='info-input' value='姓名：'></input>
+  <input class='info-input' value='{{detail.memberName}}'></input>
+</view>
+<view class='info'>
+  <input class='info-input' value='手机号：'></input>
+  <input class='info-input' value='{{detail.mobile}}'></input>
+</view>
+<view class='info'>
+  <input class='info-input' value='当前等级：'></input>
+  <input class='info-input' value='{{detail.memberLevelName}}'></input>
+</view>
+</view>
