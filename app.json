@@ -3,7 +3,10 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/list/list",
-    "pages/operation/detail"
+    "pages/operation/detail",
+    "pages/music/music",
+    "pages/map/map",
+    "pages/video/video"
   ],
   "window": {
     "backgroundTextStyle": "light",

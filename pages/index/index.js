@@ -16,6 +16,21 @@ Page({
       url: '../list/list'
     })
   },
+  playMusic:function(){
+    wx.navigateTo({
+      url: '../music/music',
+    })
+  },
+  playVideo:function(){
+    wx.navigateTo({
+      url: '../video/video',
+    })
+  },
+  playMap:function(){
+    wx.navigateTo({
+      url: '../map/map',
+    })
+  },
   onLoad: function() {
     if (app.globalData.userInfo) {
       this.setData({

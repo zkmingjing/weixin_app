@@ -1,16 +1,20 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  <view class='userinfo'>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block> -->
-    <!--index.wxml-->
-    <button style="margin:30rpx;" bindtap="chooseimage">获取图片</button>
-    <image src="{{tempFilePaths }}" mode="aspecFill" style="width: 100%; height: 450rpx" />
-
-    <button bindtap="bindViewTap"> 请点击 </button>
+    </block>
+  </view>
+  <view class='userinfo'>
+    <button style="margin:30rpx;" bindtap="playMusic">播放音乐</button>
+  </view>
+    <view class='userinfo'>
+    <button style="margin:30rpx;" bindtap="playVideo">播放视频</button>
+  </view>
+  <view class='userinfo'>
+    <button style="margin:30rpx;" bindtap="playMap">地图查询</button>
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
